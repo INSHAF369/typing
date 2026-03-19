@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>StudyPal AI — Study Smarter, Not Harder</title>
+<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Fraunces:ital,wght@0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo">
+    <div class="logo-dot"></div>
+    StudyPal
+  </div>
+  <ul class="nav-links">
+    <li><a href="#features">Features</a></li>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <button class="nav-cta">Try Free →</button>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <div class="hero-badge">
+    <div class="badge-dot"></div>
+    ✨ AI-Powered · Trusted by 50,000+ Students
+  </div>
+
+  <h1 class="hero-title">
+    Study smarter.<br>
+    Stress <em>less.</em>
+  </h1>
+
+  <p class="hero-sub">
+    StudyPal uses AI to turn your notes, textbooks, and lectures into personalized flashcards, quizzes, and study plans — in seconds.
+  </p>
+
+  <div class="hero-cta-row">
+    <button class="btn-primary">🚀 Start for free</button>
+    <button class="btn-ghost">Watch demo ▶</button>
+  </div>
+
+  <!-- App Mockup -->
+  <div class="hero-mockup">
+    <div class="mockup-bar">
+      <div class="dot dot-r"></div>
+      <div class="dot dot-y"></div>
+      <div class="dot dot-g"></div>
+      <span class="mockup-title">StudyPal AI — Organic Chemistry · Week 4</span>
+    </div>
+    <div class="mockup-body">
+      <div class="mockup-sidebar">
+        <div class="sidebar-item active">📚 My Subjects</div>
+        <div class="sidebar-item">🧠 Flashcards</div>
+        <div class="sidebar-item">📝 Quizzes</div>
+        <div class="sidebar-item">📊 Progress</div>
+        <div class="sidebar-item">🤖 AI Tutor</div>
+        <div class="sidebar-item">📅 Study Plan</div>
+      </div>
+      <div class="mockup-main">
+        <div class="mock-card">
+          <div class="mock-label lime">📊 Weekly Progress</div>
+          <div class="progress-rows">
+            <div class="prog-row">
+              <div class="prog-row-label"><span>Organic Chemistry</span><span style="color:var(--lime)">78%</span></div>
+              <div class="prog-bar"><div class="prog-fill bar-lime"></div></div>
+            </div>
+            <div class="prog-row">
+              <div class="prog-row-label"><span>Calculus II</span><span style="color:var(--coral)">55%</span></div>
+              <div class="prog-bar"><div class="prog-fill bar-coral"></div></div>
+            </div>
+            <div class="prog-row">
+              <div class="prog-row-label"><span>World History</span><span style="color:var(--sky)">91%</span></div>
+              <div class="prog-bar"><div class="prog-fill bar-sky"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="mock-card">
+          <div class="mock-label coral">🧠 Quick Quiz — Organic Chem</div>
+          <div class="mock-question">What functional group is present in all carboxylic acids?</div>
+          <div class="mock-options">
+            <div class="mock-opt">A) Hydroxyl group (—OH)</div>
+            <div class="mock-opt correct">B) Carboxyl group (—COOH) ✓</div>
+            <div class="mock-opt">C) Amino group (—NH₂)</div>
+          </div>
+        </div>
+        <div class="ai-bubble">
+          <span>🤖 AI Tutor:</span> Great job! The carboxyl group (—COOH) is the defining feature of carboxylic acids. It combines a carbonyl and hydroxyl group. Want me to generate 5 more practice questions on functional groups?
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SOCIAL PROOF BAR -->
+<div class="proof-bar">
+  <div class="proof-item">
+    <div class="proof-num">50<span>K+</span></div>
+    <div class="proof-lbl">Active students</div>
+  </div>
+  <div class="proof-divider"></div>
+  <div class="proof-item">
+    <div class="proof-num">4.<span>9</span>★</div>
+    <div class="proof-lbl">Average rating</div>
+  </div>
+  <div class="proof-divider"></div>
+  <div class="proof-item">
+    <div class="proof-num">2<span>M+</span></div>
+    <div class="proof-lbl">Flashcards generated</div>
+  </div>
+  <div class="proof-divider"></div>
+  <div class="proof-item">
+    <div class="proof-num">89<span>%</span></div>
+    <div class="proof-lbl">Report better grades</div>
+  </div>
+</div>
+
+<!-- FEATURES -->
+<div id="features">
+  <div class="section">
+    <div class="section-eyebrow" style="color:var(--lime)">Features</div>
+    <h2 class="section-title">Everything you need.<br>Nothing you don't.</h2>
+    <p class="section-sub">Built for the way college students actually study — fast, flexible, and actually effective.</p>
+
+    <div class="features-bento">
+
+      <div class="feat feat-1">
+        <div class="feat-icon icon-lime">🧠</div>
+        <div class="feat-title">AI Flashcard Generator</div>
+        <div class="feat-desc">Paste your notes or upload a PDF. StudyPal instantly generates smart, concise flashcards — no formatting, no effort.</div>
+      </div>
+
+      <div class="feat feat-2">
+        <div class="feat-icon icon-coral">📝</div>
+        <div class="feat-title">Adaptive Quizzes</div>
+        <div class="feat-desc">Our AI learns which concepts you struggle with and serves more of those. Study what matters, skip what you know.</div>
+      </div>
+
+      <div class="feat feat-3">
+        <div class="feat-icon icon-sky">🤖</div>
+        <div class="feat-title">AI Tutor Chat</div>
+        <div class="feat-desc">Stuck on a concept? Ask your AI tutor anything, anytime. Get clear explanations without waiting for office hours.</div>
+      </div>
+
+      <!-- Wide card -->
+      <div class="feat feat-4 feat-wide">
+        <div class="feat-wide-inner">
+          <div>
+            <div class="feat-icon icon-violet">📊</div>
+            <div class="feat-title">Smart Progress Tracking</div>
+            <div class="feat-desc">See exactly how much you know across every subject. StudyPal shows you which topics need attention so you can study strategically — not blindly.</div>
+          </div>
+          <div class="feat-wide-visual">
+            <div class="progress-rows">
+              <div class="prog-row">
+                <div class="prog-row-label"><span style="font-size:0.72rem;color:var(--muted)">Mitosis</span><span style="font-size:0.72rem;color:var(--lime)">94%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="background:var(--lime);width:94%;animation:growBar 2s ease forwards"></div></div>
+              </div>
+              <div class="prog-row">
+                <div class="prog-row-label"><span style="font-size:0.72rem;color:var(--muted)">Cell Respiration</span><span style="font-size:0.72rem;color:var(--yellow)">62%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="background:var(--yellow);width:62%;animation:growBar 2.2s ease forwards"></div></div>
+              </div>
+              <div class="prog-row">
+                <div class="prog-row-label"><span style="font-size:0.72rem;color:var(--muted)">DNA Replication</span><span style="font-size:0.72rem;color:var(--coral)">38%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="background:var(--coral);width:38%;animation:growBar 2.4s ease forwards"></div></div>
+              </div>
+              <div class="prog-row">
+                <div class="prog-row-label"><span style="font-size:0.72rem;color:var(--muted)">Protein Synthesis</span><span style="font-size:0.72rem;color:var(--sky)">81%</span></div>
+                <div class="prog-bar"><div class="prog-fill" style="background:var(--sky);width:81%;animation:growBar 2.6s ease forwards"></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="feat feat-5">
+        <div class="feat-icon icon-yellow">📅</div>
+        <div class="feat-title">Personalized Study Plans</div>
+        <div class="feat-desc">Enter your exam dates. StudyPal builds a realistic day-by-day study schedule that actually fits your life.</div>
+      </div>
+
+      <div class="feat feat-6">
+        <div class="feat-icon icon-pink">🔗</div>
+        <div class="feat-title">Works With Everything</div>
+        <div class="feat-desc">PDF, Word, PowerPoint, Google Docs, YouTube lectures, plain text — if it has content, StudyPal can learn from it.</div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- HOW IT WORKS -->
+<div class="how-section" id="how">
+  <div class="how-inner">
+    <div class="section-eyebrow" style="color:var(--sky)">How it works</div>
+    <h2 class="section-title">From notes to exam-ready<br>in 4 steps.</h2>
+    <div class="steps-grid">
+      <div class="step step-1">
+        <div class="step-num">1</div>
+        <div class="step-title">Upload your content</div>
+        <div class="step-desc">Drop in your notes, slides, or textbook PDFs. Or paste text directly.</div>
+      </div>
+      <div class="step step-2">
+        <div class="step-num">2</div>
+        <div class="step-title">AI processes it</div>
+        <div class="step-desc">StudyPal identifies key concepts, definitions, and relationships in your material.</div>
+      </div>
+      <div class="step step-3">
+        <div class="step-num">3</div>
+        <div class="step-title">Study your way</div>
+        <div class="step-desc">Flashcards, quizzes, or chat with your AI tutor — pick what works for you.</div>
+      </div>
+      <div class="step step-4">
+        <div class="step-num">4</div>
+        <div class="step-title">Ace the exam</div>
+        <div class="step-desc">Track your mastery, fill your gaps, and walk in confident.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TESTIMONIALS -->
+<div id="testimonials">
+  <div class="section">
+    <div class="section-eyebrow" style="color:var(--violet)">Students love it</div>
+    <h2 class="section-title">Real results.<br>Real students.</h2>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">"I went from a C+ to an A- in Organic Chemistry after two weeks of using StudyPal. The adaptive quizzes are honestly witchcraft."</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--lime)">MK</div>
+          <div><div class="testi-name">Maya K.</div><div class="testi-role">Pre-Med, UCLA · Junior</div></div>
+        </div>
+      </div>
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">"I upload my lecture slides every week and have a full study set in like 30 seconds. Wish I had this during freshman year honestly."</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--sky)">JT</div>
+          <div><div class="testi-name">James T.</div><div class="testi-role">Computer Science, UT Austin · Senior</div></div>
+        </div>
+      </div>
+      <div class="testi">
+        <div class="testi-stars">★★★★★</div>
+        <div class="testi-text">"The AI tutor actually explains things in a way that makes sense. It's like having a really patient study buddy who knows everything."</div>
+        <div class="testi-author">
+          <div class="testi-avatar" style="background:var(--pink)">SR</div>
+          <div><div class="testi-name">Sofia R.</div><div class="testi-role">Psychology, NYU · Sophomore</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- PRICING -->
+<div id="pricing" style="background:rgba(255,255,255,0.02);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
+  <div class="section">
+    <div class="section-eyebrow" style="color:var(--yellow)">Pricing</div>
+    <h2 class="section-title">Grades are priceless.<br>StudyPal isn't.</h2>
+    <p class="section-sub">Start free, upgrade when you're ready. Cancel anytime — no stress.</p>
+    <div class="pricing-grid">
+
+      <div class="plan">
+        <div class="plan-name">Free</div>
+        <div class="plan-price"><sup>$</sup>0</div>
+        <div class="plan-period">forever</div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> 50 AI flashcards/month</li>
+          <li><span class="check">✓</span> 3 subjects</li>
+          <li><span class="check">✓</span> Basic quizzes</li>
+          <li><span class="check">✓</span> Progress tracking</li>
+          <li><span class="check coral">✗</span> <span style="color:var(--muted)">AI Tutor chat</span></li>
+          <li><span class="check coral">✗</span> <span style="color:var(--muted)">Study plans</span></li>
+        </ul>
+        <button class="plan-btn outline">Get started free</button>
+      </div>
+
+      <div class="plan popular">
+        <div class="popular-badge">🔥 Most Popular</div>
+        <div class="plan-name">Pro Student</div>
+        <div class="plan-price"><sup>$</sup>9</div>
+        <div class="plan-period">per month · billed monthly</div>
+        <ul class="plan-features">
+          <li><span class="check">✓</span> Unlimited flashcards</li>
+          <li><span class="check">✓</span> Unlimited subjects</li>
+          <li><span class="check">✓</span> Adaptive quizzes</li>
+          <li><span class="check">✓</span> AI Tutor (unlimited)</li>
+          <li><span class="check">✓</span> Personalized study plans</li>
+          <li><span class="check">✓</span> PDF & file uploads</li>
+        </ul>
+        <button class="plan-btn filled">Start 7-day free trial</button>
+      </div>
+
+      <div class="plan">
+        <div class="plan-name">Team / Study Group</div>
+        <div class="plan-price"><sup>$</sup>6</div>
+        <div class="plan-period">per person/month · min 3 people</div>
+        <ul class="plan-features">
+          <li><span class="check sky">✓</span> Everything in Pro</li>
+          <li><span class="check sky">✓</span> Shared flashcard decks</li>
+          <li><span class="check sky">✓</span> Group study sessions</li>
+          <li><span class="check sky">✓</span> Collaborative quizzes</li>
+          <li><span class="check sky">✓</span> Group progress dashboard</li>
+          <li><span class="check sky">✓</span> Priority support</li>
+        </ul>
+        <button class="plan-btn dark">Start group trial</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div id="faq">
+  <div class="section" style="text-align:center">
+    <div class="section-eyebrow" style="color:var(--coral)">FAQ</div>
+    <h2 class="section-title">Got questions?</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          How does StudyPal generate flashcards?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">StudyPal uses large language models to read your uploaded content and extract key concepts, definitions, and relationships. It then formats these into clean, concise flashcard pairs automatically. The whole process takes under 30 seconds for most documents.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          What file types can I upload?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">StudyPal supports PDF, Word (.docx), PowerPoint (.pptx), plain text, and Google Docs links. We also support YouTube video URLs — StudyPal will transcribe and study from the lecture for you.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Is my data private and secure?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Absolutely. Your notes and uploaded files are encrypted at rest and in transit. We never use your content to train our AI models, and you can delete all your data at any time from your account settings.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Can I cancel my subscription anytime?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">Yes, completely. Cancel anytime from your account settings with no questions asked. You'll keep access until the end of your billing period, and we won't charge you again.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="this.parentElement.classList.toggle('open')">
+          Is there a student discount?
+          <span class="faq-icon">+</span>
+        </div>
+        <div class="faq-a">StudyPal Pro at $9/month is already our student price! If you're part of a university program, reach out to us — we offer institutional licensing for departments and student organizations.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FINAL CTA -->
+<div class="cta-section">
+  <div class="cta-inner">
+    <h2 class="cta-title">Your best GPA<br>starts tonight. 🚀</h2>
+    <p class="cta-sub">Join 50,000+ students who study smarter with StudyPal. Free to start, takes 60 seconds to set up.</p>
+    <button class="btn-primary" style="font-size:1.1rem;padding:18px 48px">Get started for free →</button>
+    <p class="cta-small">No credit card required · Cancel anytime · 7-day Pro trial included</p>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">✨ StudyPal</div>
+  <div class="footer-links">
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Support</a>
+    <a href="#">Blog</a>
+    <a href="#">Careers</a>
+  </div>
+  <div class="footer-copy">© 2026 StudyPal AI · Built for students, by students</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
